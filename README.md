@@ -33,3 +33,16 @@ UserLoginSystem
 
 7) resetPassword.php is used when user forgot password. it contains code to reset user password.
  
+ 
+ 
+ DATABASE SCHEMA :
+
+we required two tables
+1) " user "  having     userName , emailId and  password  field;
+2) "userProfile " having firstName , lastName , DOB , gender ,userId and photo fields; 
+
+
+
+create table user(userName char(100),emailId char(100),password char(100));
+
+create table userProfile(firstName char(100), lastName char(100), DOB char(50) , gender char(10) ,userId char(100),photo char(200));
